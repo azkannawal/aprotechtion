@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import companyLogo from "../../assets/logo.png";
 
 const PageLoading = () => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const PageLoading = () => {
   return (
     <main className="flex justify-center items-center min-h-screen">
       <div data-aos="zoom-out-up">
-        <img src="./logo.png" className="w-48"/>
+        <img src={companyLogo} className="w-48"/>
       </div>
     </main>
   );
