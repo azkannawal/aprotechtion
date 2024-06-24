@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -12,15 +13,15 @@
   outline: none;
 }
 
-.glow-effect {
+/* .glow-effect {
   position: fixed;
   transition: none;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   width: 20vw;
   height: 20vw;
-  background: radial-gradient(rgba(247, 207, 7, 0.3), transparent 15%);
-}
+  background: radial-gradient(rgba(247, 207, 7), transparent 10%);
+} */
 
 .hoverline {
   a{

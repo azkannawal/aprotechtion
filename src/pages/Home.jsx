@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import PageLoading from "./../components/pageLoader/index";
 import Slider from "react-slick";
 import Images from "../dummy/caraousel";
-import GlowCursor from "./../components/cursor/index";
+// import GlowCursor from "./../components/cursor/index";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ImagesTeam from "../dummy/team";
@@ -62,7 +62,7 @@ const Home = () => {
       ) : (
         <main className="flex flex-col items-center min-h-screen relative">
           <header
-            className={`flex justify-between items-center w-full fixed z-20 px-12 py-3.5 ${
+            className={`flex justify-between items-center w-full fixed z-20 px-12 py-1.5 lg:py-3.5 ${
               scrolled
                 ? "bg-gradient-to-b from-four to-three duration-300 shadow-lg"
                 : "duration-300"
@@ -73,7 +73,7 @@ const Home = () => {
               className="group h-20 w-20 rounded-lg lg:hidden"
               onClick={toggleMenu}
             >
-              <div className="grid justify-items-center gap-1.5">
+              <div className="grid justify-items-end gap-y-1.5">
                 <span
                   className={`h-1 w-8 rounded-full bg-white ${
                     isOpen
@@ -144,11 +144,7 @@ const Home = () => {
               ))}
             </Slider>
             <div className="flex flex-col-reverse lg:flex-row w-full lg:w-full justify-center items-center top-[50%] left-1/4 lg:gap-x-10 -translate-x-1/4 -translate-y-1/2 absolute lg:px-24">
-              <div
-                className="text-xl text-white w-1/2"
-                data-aos="zoom-in-down"
-                data-aos-duration="1200"
-              >
+              <div className="text-xl text-white w-1/2" data-aos="zoom-in-down">
                 <p className="text-3xl lg:text-4xl font-bold bg-gradient-to-b from-four to-three inline-block text-transparent bg-clip-text pt-10 lg:pt-0 pb-4">
                   Protect Your Skin with AProTechtion
                 </p>
@@ -164,6 +160,7 @@ const Home = () => {
                 src={companyLogo}
                 className="w-1/2 max-w-[500px] hidden lg:block"
                 alt="img"
+                data-aos="zoom-in-down"
               />
             </div>
           </section>
@@ -176,20 +173,20 @@ const Home = () => {
                 src={productImg}
                 className="w-full max-w-[250px] rounded-xl"
                 alt="img"
-                data-aos="fade-right"
+                data-aos="zoom-in-up"
               />
             </div>
             <div className="w-full pt-10 flex-col lg:pt-0 lg:w-3/5">
               <h1
                 className="bg-two w-fit p-3 text-four font-bold text-3xl rounded-xl"
-                data-aos="fade-left"
+                data-aos="fade-down"
               >
                 Keunggulan Produk
               </h1>
               <ul className="list-inside">
                 <li
                   className="pt-6 pb-2 text-lg font-bold text-two flex"
-                  data-aos="zoom-out-right"
+                  data-aos="fade-up"
                 >
                   <img src={listItem} alt="" className="w-8 h-8" />
                   <div className="pl-3">
@@ -203,7 +200,7 @@ const Home = () => {
                 </li>
                 <li
                   className="py-2 text-lg font-bold text-two flex"
-                  data-aos="zoom-out-right"
+                  data-aos="fade-up"
                 >
                   <img src={listItem} alt="" className="w-8 h-8" />
                   <div className="pl-3">
@@ -217,7 +214,7 @@ const Home = () => {
                 </li>
                 <li
                   className="py-2 text-lg font-bold text-two flex"
-                  data-aos="zoom-out-right"
+                  data-aos="fade-up"
                 >
                   <img src={listItem} alt="" className="w-8 h-8" />
                   <div className="pl-3">
@@ -231,7 +228,7 @@ const Home = () => {
                 </li>
                 <li
                   className="py-2 text-lg font-bold text-two flex"
-                  data-aos="zoom-out-right"
+                  data-aos="fade-up"
                 >
                   <img src={listItem} alt="" className="w-8 h-8" />
                   <div className="pl-3">
@@ -245,7 +242,7 @@ const Home = () => {
                 </li>
                 <li
                   className="py-2 text-lg font-bold text-two flex"
-                  data-aos="zoom-out-right"
+                  data-aos="fade-up"
                 >
                   <img src={listItem} alt="" className="w-8 h-8" />
                   <div className="pl-3">
@@ -258,7 +255,7 @@ const Home = () => {
                 </li>
                 <li
                   className="py-2 text-lg font-bold text-two flex"
-                  data-aos="zoom-out-right"
+                  data-aos="fade-up"
                 >
                   <img src={listItem} alt="" className="w-8 h-8" />
                   <div className="pl-3">
@@ -280,13 +277,13 @@ const Home = () => {
             <div className="flex flex-col w-full lg:w-1/2 lg:pl-14 pl-0 pt-10 lg:pt-0">
               <h1
                 className="bg-two w-fit p-3 text-four font-bold text-3xl rounded-xl"
-                data-aos="fade-right"
+                data-aos="fade-down"
               >
                 Review
               </h1>
               <div
                 className="flex flex-col bg-two rounded-xl mt-6 p-4"
-                data-aos="zoom-out-left"
+                data-aos="fade-up"
               >
                 <h1 className="font-bold text-lg text-white">Aurel</h1>
                 <h2>⭐⭐⭐⭐⭐</h2>
@@ -297,7 +294,7 @@ const Home = () => {
               </div>
               <div
                 className="flex flex-col bg-two rounded-xl mt-6 p-4"
-                data-aos="zoom-out-left"
+                data-aos="fade-up"
               >
                 <h1 className="font-bold text-lg text-white">Cindy Gracia</h1>
                 <h2>⭐⭐⭐⭐</h2>
@@ -308,7 +305,7 @@ const Home = () => {
               </div>
               <div
                 className="flex flex-col bg-two rounded-xl mt-6 p-4"
-                data-aos="zoom-out-left"
+                data-aos="fade-up"
               >
                 <h1 className="font-bold text-lg text-white">Safira Keynada</h1>
                 <h2>⭐⭐⭐⭐⭐</h2>
@@ -319,7 +316,7 @@ const Home = () => {
               </div>
               <div
                 className="flex flex-col bg-two rounded-xl mt-6 p-4"
-                data-aos="zoom-out-left"
+                data-aos="fade-up"
               >
                 <h1 className="font-bold text-lg text-white">Zein Wicaksono</h1>
                 <h2>⭐⭐⭐⭐⭐</h2>
@@ -331,24 +328,33 @@ const Home = () => {
             </div>
             <div
               className="flex flex-col gap-y-5 p-4 justify-center items-center w-full lg:w-1/2 bg-white border-4 border-two rounded-xl mx-0 lg:mx-24"
-              data-aos="flip-left"
+              data-aos="fade-up"
             >
-              <h1 className="text-two font-bold text-xl lg:text-3xl">
+              <h1
+                className="text-two font-bold text-xl lg:text-3xl"
+                data-aos="fade-down"
+              >
                 Beli sekarang
               </h1>
               <img
                 src={productImg2}
-                data-aos="flip-right"
+                data-aos="fade-up"
                 className="w-full max-w-[320px] lg:max-w-[480px] rounded-xl"
               />
               <div className="flex flex-row gap-5 w-full justify-center">
                 <a href="https://s.lazada.co.id/s.rOJBT" target="_blank">
-                  <button className="bg-four font-bold text-two p-4 px-8  lg:px-20 rounded-full">
+                  <button
+                    className="bg-two font-bold text-white p-4 px-8  lg:px-20 rounded-full"
+                    data-aos="fade-down"
+                  >
                     Lazada
                   </button>
                 </a>
                 <a href="https://id.shp.ee/7iwvBm6" target="_blank">
-                  <button className="bg-four font-bold text-two p-4 px-8  lg:px-20 rounded-full">
+                  <button
+                    className="bg-two font-bold text-white p-4 px-8  lg:px-20 rounded-full"
+                    data-aos="fade-down"
+                  >
                     Shopee
                   </button>
                 </a>
@@ -359,7 +365,10 @@ const Home = () => {
             id="team"
             className="flex flex-col items-center w-full py-12 bg-amber-50"
           >
-            <h1 className="bg-two w-fit p-3 text-four font-bold text-3xl rounded-xl">
+            <h1
+              className="bg-two w-fit p-3 text-four font-bold text-3xl rounded-xl"
+              data-aos="fade-down"
+            >
               Struktur Usaha
             </h1>
             <div className="flex flex-wrap gap-x-6 gap-y-6 w-full justify-center pt-6 px-20 lg:px-48">
@@ -387,7 +396,7 @@ const Home = () => {
               <div className="flex flex-col">
                 <div
                   className="bg-white w-28 h-28 flex justify-center self-center lg:self-start items-center rounded-full mb-8"
-                  data-aos="flip-left"
+                  data-aos="fade-up"
                 >
                   <img src={companyLogo} alt="img" className="w-24 pb-2" />
                 </div>
@@ -460,27 +469,26 @@ const Home = () => {
               </div>
             </div>
           </footer>
-          {/* <section
+          <section
             id="cta"
-            className="fixed bottom-8 right-8"
-            data-aos="zoom-in-right"
+            className="fixed bottom-4 right-4"
+            data-aos="zoom-in-up"
           >
-            <div className="flex rounded-xl py-3 p-4 bg-two justify-center items-center">
-              <img
-                src="https://s3-ap-southeast-1.amazonaws.com/qiscus-sdk/public/qismo/img/icon-qiscus-widget-default.svg"
-                alt=""
-                className="w-8 pr-2"
-              />
+            <div className="flex rounded-xl py-3 pl-4 pr-3  bg-two justify-center items-center">
               <a
                 href="https://wa.me/6285236189714"
                 target="_blank"
                 className="text-sm text-white"
               >
-                FAQ
+                <img
+                  src="https://s3-ap-southeast-1.amazonaws.com/qiscus-sdk/public/qismo/img/icon-qiscus-widget-default.svg"
+                  alt=""
+                  className="w-8 pr-2"
+                />
               </a>
             </div>
-          </section> */}
-          <GlowCursor />
+          </section>
+          {/* <GlowCursor /> */}
         </main>
       )}
     </>
