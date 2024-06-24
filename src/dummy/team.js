@@ -22,14 +22,14 @@ const ImagesTeam = [
   },
   {
     id: 4,
-    src: "./4.png",
+    src: "./5.png",
     alt: "Image 4",
     name: "Nasywa Putri Amalia",
     post: "Manajer Keuangan",
   },
   {
     id: 5,
-    src: "./5.png",
+    src: "./4.png",
     alt: "Image 5",
     name: "Gabrielle Bernadhita Mercyanto Putri",
     post: "Manajer Branding dan Desain",

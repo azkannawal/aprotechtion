@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      listStyleImage: {
+        checkmark: 'url("/src/assets/image.png")',
+      },
       colors: {
         one: '#D0ECF3',
         two: '#26346E',

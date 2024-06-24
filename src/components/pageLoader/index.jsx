@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import companyLogo from "../../assets/logo.png";
+import companyLogo from "../../assets/logo_new.png";
 
 const PageLoading = () => {
   useEffect(() => {
