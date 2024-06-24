@@ -344,7 +344,7 @@ const Home = () => {
               <div className="flex flex-row gap-5 w-full justify-center">
                 <a href="https://s.lazada.co.id/s.rOJBT" target="_blank">
                   <button
-                    className="bg-two font-bold text-white p-4 px-8  lg:px-20 rounded-full"
+                    className="bg-two font-bold text-white p-4 px-6 lg:px-20 rounded-full"
                     data-aos="fade-down"
                   >
                     Lazada
@@ -352,7 +352,7 @@ const Home = () => {
                 </a>
                 <a href="https://id.shp.ee/7iwvBm6" target="_blank">
                   <button
-                    className="bg-two font-bold text-white p-4 px-8  lg:px-20 rounded-full"
+                    className="bg-two font-bold text-white p-4 px-6 lg:px-20 rounded-full"
                     data-aos="fade-down"
                   >
                     Shopee
